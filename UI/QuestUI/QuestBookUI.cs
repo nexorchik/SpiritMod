@@ -586,7 +586,7 @@ namespace SpiritMod.UI.QuestUI
 			_questClientText.Text = quest.QuestDescription;
 			_questClientText.UpdateText();
 			var category = QuestManager.GetCategoryInfo(quest.QuestCategory);
-			_questCategoryText.Text = category.Name;
+			_questCategoryText.Text = category.LocalizedDisplayName.Value;
 			_questCategoryText.Colour = category.Color;
 			_questObjectivesText.Page = 0;
 			_questObjectivesText.Text = quest.GetObjectivesBook();
