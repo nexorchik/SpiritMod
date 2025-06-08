@@ -31,7 +31,7 @@ namespace SpiritMod.Buffs.Armor
 		public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
 		{
 			MyPlayer modPlayer = Main.LocalPlayer.GetSpiritPlayer();
-			tip += $"\nDamage dealt is increased by {modPlayer.damageStacks * 3}%";
+			tip = Language.GetTextValue("Mods.SpiritMod.Buffs.ExplorerFight.Description", modPlayer.damageStacks * 3);
 			rare = modPlayer.damageStacks >> 1;
 		}
 	}
