@@ -454,6 +454,8 @@ public static class QuestManager
 		public Color Color;
 		public Asset<Texture2D> Texture;
 		public Rectangle? Frame;
+		public LocalizedText LocalizedDisplayName =>
+		Language.GetText($"Mods.SpiritMod.Quests.Categories.{Name}");
 	}
 }
 
